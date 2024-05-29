@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590183988309.dkr.ecr.us-east-1.amazonaws.com
+      - mvn clean install
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker build -t mydeployment:latest .
+      - docker tag mydeployment:latest 590183988309.dkr.ecr.us-east-1.amazonaws.com/mydeployment:latest
+      - docker push 590183988309.dkr.ecr.us-east-1.amazonaws.com/mydeployment:latest
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      
+artifacts:
+  files:
+   - imagedefinitions.json
+   - target/order-service.jar

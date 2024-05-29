@@ -1,0 +1,259 @@
+
+       body {
+            background: #FFFFFF;
+            color: #333;
+            padding-left: 60px;
+            padding-right: 60px;
+        } 
+
+/* linear-gradient(135deg, #153fead7, #67d6bc)
+ */        .property-details {
+            background: linear-gradient(135deg, #153fead7, #67d6bc);
+            padding: 20px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-right:18px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+           
+            
+        }
+
+        .rent-box {
+			    position: absolute;
+			    top: 30px;
+			    left: 30px;
+			    background-color: #007bff;
+			    color: #fff;
+			    padding: 10px;
+			    border-radius: 20px; /* Adjust the value to control the roundness */
+			    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			    cursor: pointer; /* Add cursor pointer for better usability */
+			    transition: transform 0.3s ease; /* Add transition for smooth effect */
+        }
+        
+        .rent-box:hover {
+			    transform: translateY(-3px); /* Move the button up slightly on hover for interactive feel */
+			}
+
+        .property-details img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            flex: 1;
+        }
+		
+        .property-info {
+       		background: linear-gradient(90deg, rgba(205,205,205,1) 15%, rgba(197,191,191,1) 100%, rgba(210,210,210,1)�100);
+            flex: 1;
+            padding: 10px;
+            padding: 20px;
+            /*margin-left: 20px; */
+            margin-right: 20px;
+       
+            position: relative;
+            display: flex;
+            
+            flex-direction: column;
+        }
+        
+        
+        .back-arrow {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .back-arrow:hover {
+            transform: scale(1.1);
+        }
+        
+        .back-arrow img {
+            width: 40px;
+            height: auto;
+        }
+        
+        .tooltip {
+            position: absolute;
+            top: 50%;
+            right: calc(100% + 5px); 
+            transform: translateY(-50%);
+            background-color: #007bff;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        
+        .back-arrow:hover .tooltip {
+            opacity: 1;
+        }
+        
+        
+
+        .property-info h2 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .property-detail {
+            background: #faf9f9;
+            padding: 10px;            
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .property-detail-full {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        
+
+        .property-features {
+            background: #faf9f9;
+            padding: 20px;
+            padding-right: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 98%;
+            padding-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .location-info {
+            background: linear-gradient(135deg, #153fead7, #67d6bc);
+            padding: 20px;
+            padding-right: 10px;
+            margin-top: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding-bottom: 20px;
+            padding-left: 50px;
+        }
+        
+        
+        .amenity-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .amenity {
+         border-radius: 20px; /* Adjust the value to control the roundness */
+		   /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a shadow with white color */
+		    background-color: #fff; /* Set the background color to white */
+		    padding: 10px; /* Adjust padding as needed */
+		    padding-left:30px;
+		    padding-right:30px;
+		    
+		    margin: 15px;
+		    margin-bottom: 10px; /* Adjust margin as needed */
+		    text-align: center;
+		    width: AUTO; 
+            height: 50px;
+          
+            
+        }
+        .location-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .location-detail {
+            background-color: #e1e0ec;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 5px;
+            width: 200px; 
+            height: 50px; 
+            border: 2px solid rgb(133, 133, 229); 
+        }
+        .bb{
+        color:white;
+		background: rgb(205,205,205);
+/* background: linear-gradient(90deg, rgba(205,205,205,1) 15%, rgba(197,191,191,1) 100%, rgba(210,210,210,1) 100%);
+ */        }
+        
+        
+        .mt-4 {
+            text-align: center;
+            margin-top: 4rem;
+            padding-bottom: 20px;
+        }
+
+        .mt-4 .btn{
+            margin-right: 10px;
+            font-size: 18px;
+            padding: 15px 25px;
+            border-radius: 20px;
+            border-radius: 5px;
+           
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-left:18px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: rgb(0, 9, 9);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 20px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(200, 191, 198, 0.8);
+        }
+
+        @media (max-width: 576px) {
+            .property-details,
+            .property-info {
+                margin-bottom: 20px; 
+            }
+        
+            .mt-4 {
+                margin-top: 2rem; 
+            }
+        
+            .location-info,
+            .mt-4 {
+                margin-bottom: 2rem; 
+            }
+        
+            .mt-4 .btn:first-child {
+                margin-right: 10px; 
+            }
+        }
+        
